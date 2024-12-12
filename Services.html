@@ -1,0 +1,377 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Crazy Foodi </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+  <style>
+          @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+     
+          h1,h3{
+      font-family: "Courgette", cursive;    
+      font-size: 35px;
+      color: rgb(248, 124, 16);
+  text-shadow: 1px 1px 2px  rgb(245, 104, 165);
+
+    }
+    h4{
+      font-family: "Sriracha", cursive;
+      font-size: 19px;
+      color: rgb(248, 124, 16);
+  text-shadow: 1px 1px 2px  rgb(245, 104, 165);
+   }
+         
+      
+      h5,a,p,label,li,tr{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 19px;
+        color: rgb(11, 11, 11);      }
+
+    .navbar-collapse  .nav-link{
+      font-family: "Courgette", cursive;          
+      font-size: 20px;
+        color: #131212;
+    }
+    .navbar-collapse .nav-link:hover {
+            color: #fafcfd;
+    }
+.offcanvas-body .nav-link{
+  font-family: "Courgette", cursive;  
+    font-style: italic;
+        font-size: larger;
+        color: #0b0b0b;
+
+}
+.offcanvas-body .nav-link:hover{
+    color: #f0f6f7;
+}
+
+
+
+
+.image-box {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #ddd; /* Optional border */
+      border-radius: 6px; /* Rounded corners */
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 280px;
+      transition: transform 0.3s ease; /* Smooth zoom effect */
+    }
+
+    .image-box img:hover {
+      transform: scale(1.1); /* Zoom in on hover */
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      width: 100%;
+      height:70px;
+      text-align: center;
+      padding: 5px;
+    }
+
+</style>
+<body >
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark" style="background: linear-gradient(90deg, rgb(255, 102, 0), rgb(255, 51, 145)); /* Two shades of RGB */
+      ">
+        <div class="container-fluid">
+          <h1 class="navbar-brand " href="#">
+        
+            <img src="img/burger.png" alt="" width="36" height="30" class="d-inline-block align-text-top   "> Crazy Foodi</h1>
+            
+            <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background: linear-gradient(90deg, rgb(255, 102, 0), rgb(255, 51, 145));border-radius:5%;width: 270px;height: 500px;">
+                <div class="offcanvas-header " style="text-align: center; justify-content: center;" >
+                  <h1 class="navbar-brand " href="#" style="color: black;">
+        
+                    <img src="img/burger.png" alt="" width="36" height="30" class="d-inline-block align-text-top   "> Crazy Foodi </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="
+                     justify-content: end;" ></button>
+                    
+                </div>
+                
+                <div class="offcanvas-body nav" >
+                 
+                    <ul class="navbar-nav  flex-grow-1 pe-3" style="text-align: center; " >
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="MENU.html">Menu</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                          
+                    <li class="nav-item">
+                      <a class="nav-link " href="Contact.html">Contact</a>
+                  </li>
+                        
+                      </ul>
+                      <div class="media  mp-4 " style="justify-content: flex-start; color: #070707;">
+                          <div class="col-lg-2 col-md-5 mb-4">
+                            <h5 class="text ">Contact Us</h5>
+                            <p class="small mb-1"><i class="bx bxs-phone"style="color: #fff;"> </i> +1 234 567 890</p>
+                            <p class="small mb-1"><i class='bx bxl-gmail'style="color: #fff;"> </i> support@foodies.com</p>
+                            <p class="small"><i class="bx bxs-map"style="color: #fff;"></i> 123 Food Street, Gourmet City</p>
+                          </div>
+                         <div class="col-md-6 text-center text-md-end">
+                          <a href="#" class="text-light me-2"><i class='bx bxl-instagram' style='color:rgba(249, 16, 109, 0.61)'  ></i></a>
+                          <a href="#" class="text-light me-2"><i class='bx bxl-whatsapp' style='color:#08a24e'  ></i></a>
+                          <a href="#" class="text-light me-2"><i class='bx bxl-facebook' style='color:#249ef8'  ></i></a>
+                          <a href="#" class="text-light"><i class='bx bxl-youtube' style='color:#ee1111'  ></i></a>
+                      </div>
+                        </div>
+                    
+                </div>
+               
+            </div>
+       
+            
+            <div class="collapse navbar-collapse  "style="justify-content:center ;text-align: center;">
+           
+
+                <ul class="navbar-nav ms-auto  px-2 ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="MENU.html">Menu</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#services">Services</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link " href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="Danger ms-auto " >
+                  <a class="Look " href="#book"> <h1> <button type="button" class="btn btn-outline-danger "  style="color: #f8f9fa; font-weight: 60; " >Book Table</button></h1></a>
+                   </div>
+            </div>
+           
+        </div>
+    </nav>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleInterval" class="carousel slide mb-2" data-bs-ride="carousel">
+    <div class="carousel-inner">
+     
+        
+        <video src="img/SE.mp4" class="object-fit w-100" autoplay></video>
+      </div>
+      
+  </div>
+         
+
+
+
+
+  <!-- Service --> 
+  <div class="container  mb-3" id="services" >
+    <h1 class="book mb-3" style="text-align: center;"> Service </h1>
+    <div class="nav nav-pills nav-fill px-1 mb-3 gap-2" >
+      <a class="nav-link " href="#" style=" color: black;"><img src="img/consult_2304450.png"style="height: 40px; width: 42px; border-radius: 60px; "> 24/7 Service</a>
+      <a class="nav-link" href="#" style="color: black;"><img src="img/food-delivery_10638655.png"style="height: 50px; width: 52px; border-radius: 60px;"> Fast Order</a>
+      <a class="nav-link" href="#" style="color: black;"><img src="img/chef_17023235.png"style="height: 50px; width: 52px; border-radius: 60px;">  Master Chefs</a>
+  
+      <a class="nav-link " href="#" style="color: black;"><img src="img/food-app_4363256.png"style="height: 50px; width: 52px; border-radius: 60px;">  Online Order</a>
+      <a class="nav-link " href="#" style="color: black;"><img src="img/quality_17577718.png"style="height: 50px; width: 52px; border-radius: 60px;"> Quality Food
+      </a>
+  </div>  
+  
+  
+    <!---  -->
+    <div class="row g-2 mb-1">
+      <div class="col-3">
+        <div class="card">
+          <img src="img/Z32.png" class="card-img" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img src="img/Z29 .png" class="card-img" alt="Image 2">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img src="img/Z31.png" class="card-img" alt="Image 3">
+         
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <img src="img/Z33.png" class="card-img" alt="Image 1">
+        </div>
+      </div>
+     
+      
+    </div>
+  
+  
+        <!-- Booing table-->
+  
+  
+  <div class="container  mb-4  mt-2" id="book"  >
+    <h1 class="book mb-3 " style="text-align: center;"> Book Table </h1>
+    <div class="row">
+      <div class="col-md-5  mb-4">
+        <img src="img/z12.png" class="card-img" alt="Image 2">
+  
+      </div>
+      <div class="col-md-6 ">
+       
+        <form>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" placeholder=" name" aria-label=" name">
+            </div>
+            <div class="col">
+  
+              <label for="date">Date:</label>
+              
+              <input type="date" class="form-control" id="date" name="date">
+              
+              </div>
+              
+              
+           
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+            <label for="time">Time</label>
+            <input type="time" class="form-control" id="time">
+           
+          </div>
+          <div class="col">
+            <label for="email">Person</label>
+          
+            <select class="form-select" id="specificSizeSelect">
+              <option selected>Person</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col">
+              <label for="name">Phone</label>
+              <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+            </div>
+            <div class="col">
+              <label for="name">Email</label>
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+           
+          </div >
+          
+          
+          <div class="d-grid gap-2 col-4 mx-auto mb-3">
+            <button class="btn btn-primary" type="button">Book Now</button>
+       
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+<!-- Footer -->
+<footer class="b text-light pt-5 pb-3 py-5">
+    <div class="container">
+      <div class="row">
+       
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-5 mb-4">
+        
+          <h3 class="text-uppercase fw-bold"><img src="img/burger.png" alt="" width="36" height="30" class="d-inline-block align-text-top   "> Crazy Foodi
+          </h3>
+          <p class="small">Welcome to Foodies, your ultimate destination for delicious recipes, restaurant recommendations, and food adventures. Join us and savor the world of flavors!</p>
+          
+        </div>
+
+
+
+        
+  
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-5 mb-4 " >
+          <h4 class="text-uppercase fw-bold ">Quick Links</h4>
+          <ul class="list-unstyled " >
+            <li><a href="index.html" class="text text-decoration-none"> Home</a></li>
+            <li><a href="#about" class="text text-decoration-none"> About </a></li>
+            <li><a href="Contact.html" class="text text-decoration-none">Contact Us</a></li>
+            <li><a href="#" class="text text-decoration-none">privacy Policy</a></li>
+            <li><a href="#" class="text text-decoration-none">Terms & Condition</a></li>
+          </ul>
+        </div>
+  
+         <!-- Opening Hours -->
+       
+        <div class="col-lg-4 col-md-5 mb-4">
+          <h4 class="text-uppercase fw-bold ">Opening Hours</h4>
+          <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+          <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-lg-2 col-md-5 mb-4">
+          <h4 class="text-uppercase fw-bold">Contact Us</h4>
+          <p class="small mb-1"><i class="bx bxs-phone"style="color: #fff;"> </i> +91 895605242</p>
+          <p class="small mb-1"><i class='bx bxl-gmail'style="color: #fff;"> </i> support@foodies.com</p>
+          <p class="small"><i class="bx bxs-map"style="color: #fff;"></i> 123 Food Street, Gourmet City</p>
+        </div>
+  
+      
+  
+      <!-- Footer Bottom -->
+      <hr class="bg-secondary">
+      <div class="row align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+              <p class="small mb-0">&copy; 2024 Crazy Foodi . All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+              <a href="#" class="text-light me-2"><i class='bx bxl-instagram' style='color: #ca4b5ed7'  ></i></a>
+              <a href="#" class="text-light me-2"><i class='bx bxl-whatsapp' style='color:#08a24e'  ></i></a>
+              <a href="#" class="text-light me-2"><i class='bx bxl-facebook' style='color:#249ef8'  ></i></a>
+              <a href="#" class="text-light"><i class='bx bxl-youtube' style='color:#ee1111'  ></i></a>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+    </div>
+  </footer>
+  
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+    </html>
